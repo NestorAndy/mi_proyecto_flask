@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Mi Proyecto Flask{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Mi Proyecto Flask</h1>
+        <nav>
+            <a href="{{ url_for('index') }}">Inicio</a> |
+            <a href="{{ url_for('formulario') }}">Formulario</a> |
+            <a href="{{ url_for('leer_txt') }}">Leer TXT</a> |
+            <a href="{{ url_for('leer_json') }}">Leer JSON</a> |
+            <a href="{{ url_for('leer_csv') }}">Leer CSV</a> |
+            <a href="{{ url_for('leer_sqlite') }}">Leer SQLite</a>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>
