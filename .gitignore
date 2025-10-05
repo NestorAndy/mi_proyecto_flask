@@ -1,0 +1,11 @@
+venv/
+__pycache__/
+*.pyc
+instance/
+.database
+env/
+.env
+database/*.db
+datos/*.json
+datos/*.csv
+*.sqlite3

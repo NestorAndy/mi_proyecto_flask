@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h3>{{ titulo }}</h3>
+  <pre>{{ contenido }}</pre>
+  <a class="btn btn-secondary" href="{{ url_for('index') }}">Volver</a>
+{% endblock %}
